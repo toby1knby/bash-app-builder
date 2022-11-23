@@ -11,8 +11,8 @@ read -r version
 echo -n -e "App identifier [foo.bar.baz]\n"
 read -r identifier
 
-echo -n -e "Enter your command/script \n#!/bin/bash\n"
-read -r scriptbody
+echo "Paste your script body - ctrl-d when done"
+scriptbody=$(cat)
 
 source conf
 #TODO Create test Y/N
